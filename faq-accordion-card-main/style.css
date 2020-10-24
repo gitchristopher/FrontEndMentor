@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-size: 14px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: transparent linear-gradient(to top , #6565e7, #af67e9) no-repeat fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    background-color: white;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-position: -575px -280px;
+    background-repeat: no-repeat;
+    border-radius: 1.5rem;
+    box-shadow: 0px 15px 25px -5px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: row;
+    width: 920px;
+    height: 510px;
+}
+
+.picture {
+    background-image:url(/images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -80px 50%;
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.picture > img {
+    transform: translate(-175px, 45px);
+}
+
+.faq {
+    flex: 1;
+    box-sizing: border-box;
+    padding-top: 3rem;
+    padding-right: 6rem;
+}
+.faq > ul {
+    padding: 0;
+    list-style: none;
+}
+.faq > ul > li {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+/*Accordian is set up as a group of radio buttons
+Content of the accordian must be hidden at the begining*/
+input[type=radio] {
+    display: none;
+}
+
+label {
+    display: flex;
+    cursor: pointer;
+    color: hsl(237, 12%, 33%);
+    line-height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input:checked + label{
+    font-weight: 700;
+}
+
+label:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+input + label:after {
+    margin-right: .5rem;
+    content: "";
+    width: 10px;
+    height: 7px;
+    background: transparent url('/images/icon-arrow-down.svg') no-repeat;
+}
+
+input:checked + label:after {
+    margin-right: .5rem;
+    content: "";
+    width: 10px;
+    height: 7px;
+    background: transparent url('/images/icon-arrow-down.svg') no-repeat;
+    transform: rotate(180deg);
+}
+
+.content {
+    display: none;
+    color: hsl(240, 6%, 50%);
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    font-size: small;
+    line-height: 1.25rem;
+}
+
+input:checked ~ .content {
+    display: block;
+}
+
+.mobilePicture {
+    display: none;
+}
+
+/* Mobile version */
+@media screen and (max-width: 810px) {
+    body {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .panel {
+        background-image: url(./images/bg-pattern-mobile.svg);
+        background-position: center 0px;
+        display: block;
+        max-width: 95%;
+        height: auto;
+        transform: translateY(-75px);
+    }
+
+    .faq {
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+
+    .faq > h1 {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .mobilePicture {
+        display: block;
+        z-index: 1000;
+        transform: translate(-15px, 15px);
+    }
+    .picture {
+        display: none;
+    }
+}
