@@ -16,7 +16,7 @@ body {
 
 .panel {
     background-color: white;
-    background-image: url(./images/bg-pattern-desktop.svg);
+    background-image: url(/faq-accordion-card-main/images/bg-pattern-desktop.svg);
     background-position: -575px -280px;
     background-repeat: no-repeat;
     border-radius: 1.5rem;
@@ -28,7 +28,7 @@ body {
 }
 
 .picture {
-    background-image:url(/images/illustration-woman-online-desktop.svg);
+    background-image:url(/faq-accordion-card-main/images/illustration-woman-online-desktop.svg);
     background-repeat: no-repeat;
     background-position: -80px 50%;
     flex: 1;
@@ -39,7 +39,7 @@ body {
 }
 
 .picture > img {
-    transform: translate(-175px, 45px);
+    transform: translate(-147px, 45px);
 }
 
 .faq {
@@ -48,8 +48,12 @@ body {
     padding-top: 3rem;
     padding-right: 6rem;
 }
+.faq > h1 {
+    margin-top: 1rem;
+}
 .faq > ul {
     padding: 0;
+    margin-top: 2rem;
     list-style: none;
 }
 .faq > ul > li {
@@ -84,7 +88,7 @@ input + label:after {
     content: "";
     width: 10px;
     height: 7px;
-    background: transparent url('/images/icon-arrow-down.svg') no-repeat;
+    background: transparent url('/faq-accordion-card-main/images/icon-arrow-down.svg') no-repeat;
 }
 
 input:checked + label:after {
@@ -92,7 +96,7 @@ input:checked + label:after {
     content: "";
     width: 10px;
     height: 7px;
-    background: transparent url('/images/icon-arrow-down.svg') no-repeat;
+    background: transparent url('/faq-accordion-card-main/images/icon-arrow-down.svg') no-repeat;
     transform: rotate(180deg);
 }
 
@@ -121,7 +125,7 @@ input:checked ~ .content {
     }
 
     .panel {
-        background-image: url(./images/bg-pattern-mobile.svg);
+        background-image: url(/faq-accordion-card-main/images/bg-pattern-mobile.svg);
         background-position: center 0px;
         display: block;
         max-width: 95%;
@@ -132,6 +136,7 @@ input:checked ~ .content {
     .faq {
         padding: 1rem;
         margin-top: 5rem;
+        margin-bottom: 2rem;
     }
 
     .faq > h1 {
