@@ -1,0 +1,303 @@
+:root {
+    --DesaturatedDarkCyan: hsl(180, 29%, 50%);
+    --LightGrayishCyanBackground: hsl(180, 52%, 96%);
+    --LightGrayishCyanFilterTablets: hsl(180, 31%, 95%);
+    --DarkGrayishCyan: hsl(180, 8%, 52%);
+    --VeryDarkGrayishCyan: hsl(180, 14%, 20%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    background-color: var(--LightGrayishCyanBackground);
+}
+
+.container {
+    height: auto;
+    background: url(/static-job-listings-master/images/bg-header-desktop.svg), linear-gradient(to bottom, var(--DesaturatedDarkCyan) 156px, var(--LightGrayishCyanBackground) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 156px;
+    padding: 110px 10% 10% 10%;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 6px 17px 4px rgb(91, 164, 164, .25);
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter > p:hover {
+    color: var(--DesaturatedDarkCyan);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.filterOptions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filterOption {
+    display: flex;
+    border-radius: 3px;
+    background-color: var(--LightGrayishCyanFilterTablets);
+    color: var(--DesaturatedDarkCyan);
+    font-weight: 700;
+    margin: .5rem;
+    align-items: center;
+}
+.filterOption > p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.deleteFilterOption {
+    background-color: var(--DesaturatedDarkCyan);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 1rem;
+    padding-bottom: .6rem;
+}
+
+.deleteFilterOption:hover {
+    background-color: var(--VeryDarkGrayishCyan);
+}
+
+.jobList {
+    display: block;
+    margin-top: 3rem;
+}
+
+.jobPost {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 6px 17px 4px rgb(91, 164, 164, .25);
+}
+
+.featuredPost {
+    border-left: 5px solid var(--VeryDarkGrayishCyan);
+}
+
+.postImage {
+    margin-right: 2rem;
+    align-self: center;
+}
+
+.postImage > img {
+    width: 110px;
+    height: 110px;
+}
+
+.postBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.postAdvertiser {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.postAdvertiser > p {
+    color: var(--DesaturatedDarkCyan);
+    font-weight: 700;
+    margin-right: .5rem;
+}
+.postAdvertiser > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.postAdvertiser > ul > li{
+    margin-left: .5rem;
+    padding: .5rem;
+    padding-bottom: .25rem;
+    border-radius: 15px/15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    font-size: small;
+}
+.newTag {
+    background-color: var(--DesaturatedDarkCyan);
+}
+
+.featureTag {
+    background-color: var(--VeryDarkGrayishCyan);
+}
+
+.postDetails {
+    display: flex;
+    flex-direction: row;
+}
+
+.postDetail:not(:last-child):after {
+    content: "•";
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.jobTitle {
+    color: var(--DesaturatedDarkCyan);
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.postDetail {
+    color: var(--DesaturatedDarkCyan);
+    font-size: larger;
+}
+
+.postKeyWords {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.keyWords {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    color: var(--DesaturatedDarkCyan);
+    font-weight: 700;
+    margin: .5rem;
+    align-items: center;
+    list-style: none;
+}
+
+.keyWords > li {
+    background-color: var(--LightGrayishCyanFilterTablets);
+    padding: .75rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.keyWords > li:hover {
+    background-color: var(--DesaturatedDarkCyan);
+    color: white;
+}
+
+@media (max-width: 1025px) {
+    .container {
+        padding: 110px 5% 5% 5%;
+    }
+    .postAdvertiser > ul > li{
+        font-size: 12px;
+    }
+    .jobTitle {
+        font-size: 16px;
+    }
+    .postDetail {
+        font-size: 14px;
+    }
+    .keyWords > li {
+        padding: .5rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .container {
+        background: url(/static-job-listings-master/images/bg-header-mobile.svg), linear-gradient(to bottom, var(--DesaturatedDarkCyan) 156px, var(--LightGrayishCyanBackground) 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 156px;
+    }
+
+    .filter {
+        padding: .5rem;
+        padding-right: 1rem;
+    }
+
+    .filterOption {
+        margin: .5rem;
+    }
+    .filterOption > p {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .deleteFilterOption {
+        padding: .5rem;
+        padding-bottom: .2rem;
+    }
+
+    .jobPost {
+        flex-direction: column;
+        padding: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .postImage {
+        align-self: flex-start;
+        transform: translateY(-40px);
+        height: 16px;
+    }
+
+    .postImage > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .postBody {
+        margin-right: 0;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--DesaturatedDarkCyan);
+    }
+
+    .postAdvertiser > p {
+        font-size: small;
+    }
+
+    .postAdvertiser > ul > li{
+        font-size: 10px;
+    }
+
+    .postDetail:not(:last-child):after {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    .jobTitle {
+        color: var(--VeryDarkGrayishCyan);
+        font-size: 14px;
+    }
+
+    .postDetail {
+        font-size: 12px;
+    }
+
+    .keyWords {
+        margin: 0;
+        padding: 0;
+    }
+
+    .keyWords > li {
+        font-size: smaller;
+        margin: 0rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+}

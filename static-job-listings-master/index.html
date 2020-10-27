@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Job Listings</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="filter">
+      <ul class="filterOptions">
+        <li class="filterOption">
+          <p>Frontend</p>
+          <div class="deleteFilterOption"><img src="/static-job-listings-master/images/icon-remove.svg" alt=""></div>
+        </li>
+        <li class="filterOption">
+          <p>CSS</p>
+          <div class="deleteFilterOption"><img src="/static-job-listings-master/images/icon-remove.svg" alt=""></div>
+        </li>
+        <li class="filterOption">
+          <p>JavaScript</p>
+          <div class="deleteFilterOption"><img src="/static-job-listings-master/images/icon-remove.svg" alt=""></div>
+        </li>
+      </ul>
+      <p>Clear</p>
+    </div>
+
+    <div class="jobList">
+
+      <div class="jobPost featuredPost">
+        <div class="postImage">
+          <img src="/static-job-listings-master/images/photosnap.svg" alt="photosnap logo">
+        </div>
+        <div class="postBody">
+          <div class="postAdvertiser">
+            <p>Photosnap</p>
+            <ul class="postTags">
+              <li class="newTag">New!</li>
+              <li class="featureTag">Featured</li>
+            </ul>
+          </div>
+          <p class="jobTitle">Senior Frontend Developer</p>
+          <div class="postDetails">
+            <p class="postDetail">1d ago</p>
+            <p class="postDetail">Full Time</p>
+            <p class="postDetail">USA only</p>
+          </div>
+        </div>
+        <div class="postKeyWords">
+          <ul class="keyWords">
+            <li>Frontend</li>
+            <li>Senior</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="jobPost featuredPost">
+        <div class="postImage">
+          <img src="/static-job-listings-master/images/manage.svg" alt="photosnap logo">
+        </div>
+        <div class="postBody">
+          <div class="postAdvertiser">
+            <p>Manage</p>
+            <ul class="postTags">
+              <li class="newTag">New!</li>
+              <li class="featureTag">Featured</li>
+            </ul>
+          </div>
+          <p class="jobTitle">Fullstack Developer</p>
+          <div class="postDetails">
+            <p class="postDetail">1d ago</p>
+            <p class="postDetail">Part Time</p>
+            <p class="postDetail">Remote</p>
+          </div>
+        </div>
+        <div class="postKeyWords">
+          <ul class="keyWords">
+            <li>Fullstack</li>
+            <li>Midweight</li>
+            <li>Python</li>
+            <li>React</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="jobPost">
+        <div class="postImage">
+          <img src="/static-job-listings-master/images/account.svg" alt="photosnap logo">
+        </div>
+        <div class="postBody">
+          <div class="postAdvertiser">
+            <p>Account</p>
+            <ul class="postTags">
+              <li class="newTag">New!</li>
+            </ul>
+          </div>
+          <p class="jobTitle">Junior Frontend Developer</p>
+          <div class="postDetails">
+            <p class="postDetail">2d ago</p>
+            <p class="postDetail">Part Time</p>
+            <p class="postDetail">USA only</p>
+          </div>
+        </div>
+        <div class="postKeyWords">
+          <ul class="keyWords">
+            <li>Frontend</li>
+            <li>Junior</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Sass</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="jobPost">
+        <div class="postImage">
+          <img src="/static-job-listings-master/images/myhome.svg" alt="photosnap logo">
+        </div>
+        <div class="postBody">
+          <div class="postAdvertiser">
+            <p>MyHome</p>
+          </div>
+          <p class="jobTitle">Junior Frontend Developer</p>
+          <div class="postDetails">
+            <p class="postDetail">5d ago</p>
+            <p class="postDetail">Contract</p>
+            <p class="postDetail">USA only</p>
+          </div>
+        </div>
+        <div class="postKeyWords">
+          <ul class="keyWords">
+            <li>Frontend</li>
+            <li>Junior</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="jobPost">
+        <div class="postImage">
+          <img src="/static-job-listings-master/images/loop-studios.svg" alt="photosnap logo">
+        </div>
+        <div class="postBody">
+          <div class="postAdvertiser">
+            <p>Loop Studios</p>
+          </div>
+          <p class="jobTitle">Software Engineer</p>
+          <div class="postDetails">
+            <p class="postDetail">1w ago</p>
+            <p class="postDetail">Full Time</p>
+            <p class="postDetail">Worldwide</p>
+          </div>
+        </div>
+        <div class="postKeyWords">
+          <ul class="keyWords">
+            <li>Fullstack</li>
+            <li>Midweight</li>
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>Sass</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="jobPost">
+        <div class="postImage">
+          <img src="/static-job-listings-master/images/faceit.svg" alt="photosnap logo">
+        </div>
+        <div class="postBody">
+          <div class="postAdvertiser">
+            <p>FaceIt</p>
+          </div>
+          <p class="jobTitle">Junior Backend Developer</p>
+          <div class="postDetails">
+            <p class="postDetail">2w ago</p>
+            <p class="postDetail">Full Time</p>
+            <p class="postDetail">UK only</p>
+          </div>
+        </div>
+        <div class="postKeyWords">
+          <ul class="keyWords">
+            <li>Backend</li>
+            <li>Junior</li>
+            <li>Ruby</li>
+            <li>RoR</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="jobPost">
+        <div class="postImage">
+          <img src="/static-job-listings-master/images/shortly.svg" alt="photosnap logo">
+        </div>
+        <div class="postBody">
+          <div class="postAdvertiser">
+            <p>Shortly</p>
+          </div>
+          <p class="jobTitle">Junior Developer</p>
+          <div class="postDetails">
+            <p class="postDetail">2w ago</p>
+            <p class="postDetail">Full Time</p>
+            <p class="postDetail">Worldwide</p>
+          </div>
+        </div>
+        <div class="postKeyWords">
+          <ul class="keyWords">
+            <li>Frontend</li>
+            <li>Junior</li>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>Sass</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="jobPost">
+        <div class="postImage">
+          <img src="/static-job-listings-master/images/insure.svg" alt="photosnap logo">
+        </div>
+        <div class="postBody">
+          <div class="postAdvertiser">
+            <p>Insure</p>
+          </div>
+          <p class="jobTitle">Junior Frontend Developer</p>
+          <div class="postDetails">
+            <p class="postDetail">2w ago</p>
+            <p class="postDetail">Full Time</p>
+            <p class="postDetail">USA only</p>
+          </div>
+        </div>
+        <div class="postKeyWords">
+          <ul class="keyWords">
+            <li>Frontend</li>
+            <li>Junior</li>
+            <li>JavaScript</li>
+            <li>Vue</li>
+            <li>Sass</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="jobPost">
+        <div class="postImage">
+          <img src="/static-job-listings-master/images/eyecam-co.svg" alt="photosnap logo">
+        </div>
+        <div class="postBody">
+          <div class="postAdvertiser">
+            <p>Eyecam Co.</p>
+          </div>
+          <p class="jobTitle">Full Stack Engineer</p>
+          <div class="postDetails">
+            <p class="postDetail">3w ago</p>
+            <p class="postDetail">Full Time</p>
+            <p class="postDetail">Worldwide</p>
+          </div>
+        </div>
+        <div class="postKeyWords">
+          <ul class="keyWords">
+            <li>Frontend</li>
+            <li>Midweight</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Django</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="jobPost">
+        <div class="postImage">
+          <img src="/static-job-listings-master/images/the-air-filter-company.svg" alt="photosnap logo">
+        </div>
+        <div class="postBody">
+          <div class="postAdvertiser">
+            <p>The Air Filter Company</p>
+          </div>
+          <p class="jobTitle">Front-end Dev</p>
+          <div class="postDetails">
+            <p class="postDetail">1mo ago</p>
+            <p class="postDetail">Part Time</p>
+            <p class="postDetail">Worldwide</p>
+          </div>
+        </div>
+        <div class="postKeyWords">
+          <ul class="keyWords">
+            <li>Frontend</li>
+            <li>Junior</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Sass</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
